@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         // PRELOADER //
         $(".cssload-container").fadeOut(10000, function () {
-            $(".preload-overlay").fadeOut(8000, function () {
+            $(".preload-overlay").fadeOut(6000, function () {
                 $("body").css("overflow","auto");
             });
         });
