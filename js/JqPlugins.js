@@ -8,11 +8,14 @@ $(document).ready(function () {
         progressThree = $(".skill-three .percentage").attr("data-value") * $(".skill-three .percentage").width() / 100;
 
         // PRELOADER //
-        $(".cssload-container").fadeOut(10000, function () {
+        $(document).on("load",function () {
+            $(".cssload-container").fadeOut(5000, function () {
             $(".preload-overlay").fadeOut(6000, function () {
-                $("body").css("overflow","auto");
+            $("body").css("overflow","auto");
             });
         });
+        )}
+ 
 
 
     // ON REFREH NOT REMOVE CLASSES //
