@@ -13,6 +13,7 @@ $(document).ready(function () {
         var preloaderArea = jQuery('.preload-overlay');
         preloader.fadeOut(3000);
         preloaderArea.delay(350).fadeOut('slow');
+        $("body").css("overflow","auto");
     });
 
     // ON REFREH NOT REMOVE CLASSES //
