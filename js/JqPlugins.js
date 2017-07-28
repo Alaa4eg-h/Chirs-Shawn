@@ -8,9 +8,11 @@ $(document).ready(function () {
         progressThree = $(".skill-three .percentage").attr("data-value") * $(".skill-three .percentage").width() / 100;
 
         // PRELOADER //
-            $(".cssload-container").fadeOut(5000, function () {
-            $(".preload-overlay").fadeOut(6000, function () {
-            $("body").css("overflow","auto");
+        $(".cssload-container").fadeOut(3000, function () {
+            $(".preload-overlay").fadeOut(1000, function () {
+                $("body").css("overflow","auto");
+            });
+        });
 
  
 
