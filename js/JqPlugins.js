@@ -8,12 +8,20 @@ $(document).ready(function () {
         progressThree = $(".skill-three .percentage").attr("data-value") * $(".skill-three .percentage").width() / 100;
 
         // PRELOADER //
+    /*
         $(".cssload-container").fadeOut(10000, function () {
             $(".preload-overlay").fadeOut(6000, function () {
                 $("body").css("overflow","auto");
             });
         });
-
+*/
+    
+        $(window).on("load", function() {
+        var preloader = jQuery('.cssload-container');
+        var preloaderArea = jQuery('.preload-overlay');
+        preloader.fadeOut(3000);
+        preloaderArea.delay(350).fadeOut('slow');
+    });
 
     // ON REFREH NOT REMOVE CLASSES //
     if ($(this).scrollTop() > 1) {
