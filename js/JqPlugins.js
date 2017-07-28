@@ -14,8 +14,6 @@ $(document).ready(function () {
             });
         });
 
- 
-
 
     // ON REFREH NOT REMOVE CLASSES //
     if ($(this).scrollTop() > 1) {
@@ -58,11 +56,11 @@ $(document).ready(function () {
         if (navHref == ("#about")) {
             $("body, html").animate({
                 scrollTop: $(navHref).offset().top - navHeight + 20
-            }, 1000);
+            }, 1500);
         } else {
             $("body, html").animate({
                 scrollTop: $(navHref).offset().top - navHeight
-            }, 1000);
+            }, 1500);
         }
     });
 
